@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-//import Styles from "./styles.login.module.css";
 import {
   Flex,
   Box,
@@ -58,13 +57,12 @@ const SignUp = () => {
           align={"center"}
           justify={"center"}
           color={"#50504b"}
-          bg={useColorModeValue("gray.50", "gray.800")}
-          //   style={{ border: "1px solid red" }}
+          bg={useColorModeValue("gray.50", "gray.800")
         >
           <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
             <Stack
               align={"center"}
-              // style={{ border: "1px solid red" }}
+           
             >
               <Heading fontSize={"4xl"}>Create Account</Heading>
 
@@ -102,7 +100,6 @@ const SignUp = () => {
               </Center>
             </Stack>
             <Box
-              //   style={{ border: "1px solid red" }}
               rounded={"lg"}
               style={{ marginTop: "-15px" }}
               p={8}
@@ -170,7 +167,7 @@ const SignUp = () => {
                     borderRadius={"none"}
                     bg={"#50504b"}
                     color={"white"}
-                    //onClick={() => linkHandler("/login")}
+                    
                     cursor="pointer"
                     _hover={{ bg: "#50504b" }}
                   >
