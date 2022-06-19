@@ -82,7 +82,6 @@ const Navbar = () => {
       <div className="drawer"><i className="fa-solid fa-bars" onClick={open} onMouseEnter={closeModal}></i>
         <Modal isOpen={modalIsOpen}
         shouldCloseOnOverlayClick={true}
-        // onRequestClose={()=> setModalIsOpen(false)}
         ariaHideApp={false}
           style={{
           overlay:{
@@ -163,9 +162,6 @@ const Navbar = () => {
           </DrawerBody>
 
           <DrawerFooter>
-            {/* <Button variant='outline' mr={3} onClick={onClose}>
-              Cancel
-            </Button> */}
             <Button colorScheme='blue' style={{
               width: '100%',backgroundColor:"#FF6781",color:"white"
               
