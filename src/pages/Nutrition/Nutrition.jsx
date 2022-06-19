@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../styles/Nutrition.module.css";
 import Slider from "react-slick";
-// import NutriData from "./NutriData.json";
 import NutriData from "../../data/NutriData.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -45,7 +44,6 @@ const Nutrtion = () => {
     centerMode: true,
     centerPadding: 0,
     slidesToShow: 3,
-    // slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => SetDivindex(next),
@@ -102,7 +100,6 @@ const Nutrtion = () => {
               {NutriData.map((el, index) => (
                 <div
                   key={el.id}
-                  // className={index === divindex ? "slide activeSlide" : "slide"}
                   className={index === divindex ? "slide activeSlide" : "slide"}
                 >
                   <div style={{ display: "flex", justifyContent: "center" }}>
